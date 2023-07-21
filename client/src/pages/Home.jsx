@@ -12,6 +12,7 @@ import avatarIcon from "../assets/images/avatar-icon.png";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
 import ServiceList from "../components/Services/ServiceList";
+import DoctorList from "../components/Doctors/DoctorList";
 
 function Home() {
   return (
@@ -238,6 +239,21 @@ function Home() {
         </div>
       </section>
       {/* ========= Feature section end ============*/}
+
+      {/* ============= Our Great doctors ============= */}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our Great Doctors</h2>
+            <p className="text__para text-center">
+              World-class care for everyone. Our health System offers unmatched, expert health care.
+            </p>
+          </div>
+
+          <DoctorList />
+        </div>
+      </section>
+      {/* ============= Our Great doctors ============= */}
     </>
   );
 }
