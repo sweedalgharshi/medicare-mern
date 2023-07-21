@@ -8,11 +8,13 @@ import icon03 from "../assets/images/icon03.png";
 import featureImg from "../assets/images/feature-img.png";
 import videoIcon from "../assets/images/video-icon.png";
 import avatarIcon from "../assets/images/avatar-icon.png";
+import faqImg from "../assets/images/faq-img.png";
 
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
 import ServiceList from "../components/Services/ServiceList";
 import DoctorList from "../components/Doctors/DoctorList";
+import FaqList from "../components/Faq/FaqList";
 
 function Home() {
   return (
@@ -77,9 +79,7 @@ function Home() {
           </div>
         </div>
       </section>
-
       {/* Hero Section End */}
-
       <section>
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
@@ -158,11 +158,9 @@ function Home() {
           </div>
         </div>
       </section>
-
       {/* ========= About section start ==========*/}
       <About />
       {/* ========= About section end ============*/}
-
       {/* ========= Services section end ============*/}
       <section>
         <div className="container">
@@ -177,9 +175,7 @@ function Home() {
         </div>
       </section>
       {/* ========= Services section end ============*/}
-
       {/* ========= Feature section start ============*/}
-
       <section>
         <div className="container">
           <div className="flex items-center justify-between flex-col lg:flex-row">
@@ -239,7 +235,6 @@ function Home() {
         </div>
       </section>
       {/* ========= Feature section end ============*/}
-
       {/* ============= Our Great doctors ============= */}
       <section>
         <div className="container">
@@ -254,6 +249,23 @@ function Home() {
         </div>
       </section>
       {/* ============= Our Great doctors ============= */}
+      {/* ============= FAQ SECTION STARTS ============= */}
+      <section>
+        <div className="container">
+          <div className="flex justify-between gap-[50px] lg:gap-0">
+            <div className="w-1/2 hidden md:block">
+              <img src={faqImg} alt="" />
+            </div>
+
+            <div className="w-full md:w-1/2">
+              <h2 className="heading">Most question by our beloved patients</h2>
+
+              <FaqList />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ============= FAQ SECTION ENDS ============= */}
     </>
   );
 }
